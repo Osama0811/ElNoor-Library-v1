@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link href="../icons/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/sign in.css">
+</head>
+
+<body>
+
+    <div class="line"> </div>
+    <div class="father">
+        <div class="header">
+            <div class="trans"> <a href="#">العربيه <i class="fas fa-language"></i></a></div>
+            <a href="../index.html"> <img src="../img/unnamed.png" class="img-1" alt="/enNoor Book" title="/enNoor Book"></a>
+            <div class="ad" style="display: none;"></div>
+        </div>
+    </div>
+    <hr style="height: 1px;margin: 0;" width="100%">
+    <div class="father">
+        <nav>
+
+            <a href="../index.html"><img src="../img/unnamed.png" class="img-2" alt="/enNoor Book" title="/enNoor Book" style="width: 30px;"></a>
+            <ul>
+                <a href="../index.html">
+                    <li> <i class="fas fa-house-user"></i>home</li>
+                </a>
+                <a href="#">
+                    <li><i class="fa fa-sitemap"></i> klm</li>
+                </a>
+                <a href="#">
+                    <li> <i class="fa fa-users"></i>ay kalam</li>
+                </a>
+                <a data-bs-toggle="modal" data-bs-target="#menuModal">
+                    <li> <i class="fa fa-bars"></i> menu</li>
+                </a>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <li> <i class="fa fa-search"></i> search</li>
+                </a>
+            </ul>
+            <a href="log out.html" class="nv1"><i class="fas fa-sign-in-alt"></i>sign out</a>
+            <a href="#" class="sign"><i class="fas fa-user"></i> sign in </a>
+        </nav>
+    </div>
+    <!--form-->
+
+
+    <div class="bag-out">
+
+
+        <div class="word" style="position: relative;left: 25%;height: 35PX; border-bottom: cadetblue solid 1PX; width: 20PX;">
+            login
+        </div>
+        <br>
+        <div class="bag-in">
+
+            <form id="blogn">
+                <h4>log in if you have an account with nour library</h4>
+                <label for="text">Email or mobile phone number</label>
+                <input type="text" id="text" name="username">
+                <label for="pass">password</label>
+                <br>
+                <input type="password" id="pass" name="pass">
+                <button id="blogin" style="cursor: pointer;"><i class="fas fa-sign-in-alt"></i> login</button>
+                <h3>OR</h3>
+
+
+                <button id="bf"><i class="fab fa-facebook-square" ></i> Login with via facebook</button>
+            </form>
+        </div>
+        <div class="bt">
+            <a class="bt-1" href="#">I dont have an account</a>
+            <a class="bt-2" href="#">Forgot your password</a>
+        </div>
+
+    </div>
+
+
+
+
+    <!--search Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search for books</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body search-modal-body">
+                    <input type="text" placeholder="BookName" class="search-input" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-green">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Menu Modal -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width: 232px;">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+
+                    <ul id="list" type=none>
+
+
+
+
+
+                        <a href="books.html"> books</a>
+
+
+                        <a href="author.html"> autor</a>
+
+
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/sign in.js"></script>
+
+
+
+
+</body>
+
+</html>
